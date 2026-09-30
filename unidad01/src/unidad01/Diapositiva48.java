@@ -11,10 +11,11 @@ public class Diapositiva48 {
 		double precio = 1.5;
 		
 		importe = cantidad * precio;
+		System.out.println(importe);
 		
 		int edad;
 		edad = 20;
-		
+		System.out.println(edad);
 	}
 
 }
