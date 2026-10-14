@@ -179,7 +179,7 @@ public class Condicionales {
 			break;
 		default :
 			System.out.println("El operador introducido no es válido.");
-			break;
+//			break; (opcional)
 		}
 		
 		
