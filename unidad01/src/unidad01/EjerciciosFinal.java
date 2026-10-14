@@ -76,13 +76,13 @@ public class EjerciciosFinal {
 //			case 17 -> letra = "V";
 //			case 18 -> letra = "H";
 //			case 19 -> letra = "L";
-//			case 20 -> letra = "c";
+//			case 20 -> letra = "C";
 //			case 21 -> letra = "K";
 //			case 22 -> letra = "E";
 //			default -> System.out.println("El número no es válido. ");
 //			}
 //
-//			System.out.println("La letra que corresponde es " + letra);
+//			System.out.printf("El DNI completo es %d%s.\n",numero,letra);
 //			
 //		}
 
@@ -96,18 +96,21 @@ public class EjerciciosFinal {
 //		double comidaDiaria = sc.nextDouble();
 //		System.out.println("Introduce el número de animales: ");
 //		int numAnimales = sc.nextInt();
-//		if (numAnimales<0) {
-//			System.out.println();
-//		}
-//		System.out.println("Introduce la media de kg que come cada animal: ");
-//		double kilosPorAnimal = sc.nextDouble();
-//
-//		double comidaNecesaria = numAnimales * kilosPorAnimal;
-//		if (comidaDiaria >= comidaNecesaria) {
-//			System.out.println("Tienes comida suficiente para todos los animales. ");
+//		if (numAnimales <= 0) {
+//			System.out.println("El número de animales no puede ser cero ni negativo.");
 //		} else {
-//			double racion = (comidaDiaria * 1.0) / numAnimales;
-//			System.out.printf("No tienes suficiente. La ración que corresponde a cada animal es de %.3f kg.", racion);
+//			System.out.println("Introduce la media de kg que come cada animal: ");
+//			double kilosPorAnimal = sc.nextDouble();
+//
+//			double comidaNecesaria = numAnimales * kilosPorAnimal;
+//			if (comidaDiaria >= comidaNecesaria) {
+//				System.out.println("Tienes comida suficiente para todos los animales. ");
+//			} else {
+//				double racion = (comidaDiaria * 1.0) / numAnimales;
+//				System.out.printf("No tienes suficiente. La ración que corresponde a cada animal es de %.3f kg.",
+//						racion);
+//			}
+//
 //		}
 
 		/*
@@ -118,23 +121,47 @@ public class EjerciciosFinal {
 //		System.out.println("Introduce un número entre 1 y 99: ");
 //		int numero = sc.nextInt();
 //
-//		String numeroLetra = "";
-//		String unidadesLetra = "";
-//		String decenasLetra = "";
-//		int unidades = numero % 10;
-//		int decenas = numero / 10;
-//		switch (numero) {
-//		case 1 -> unidadesLetra = "uno";
-//		case 2 -> unidadesLetra = "dos";
-//		case 3 -> unidadesLetra = "tres";
-//		case 4 -> unidadesLetra = "cuatro";
-//		case 5 -> unidadesLetra = "cinco";
-//		case 6 -> unidadesLetra = "seis";
-//		case 7 -> unidadesLetra = "siete";
-//		case 8 -> unidadesLetra = "ocho";
-//		case 9 -> unidadesLetra = "nueve";
+//		if (numero < 1 || numero > 99) {
+//			System.out.println("ERROR. Solo se admiten números del 1 al 99.");
+//		} else {
+//			String numeroLetra = "";
+//			String unidadesLetra = "";
+//			String decenasLetra = "";
+//			int unidades = numero % 10;
+//			int decenas = numero / 10;
+//			switch (decenas) {
+//			case 1:
+//				switch (unidades) {
+//				case 0 -> System.out.println("Diez");
+//				case 1 -> System.out.println("Once");
+//				case 2 -> System.out.println("Doce");
+//				case 3 -> System.out.println("Trece");
+//				case 4 -> System.out.println("Catorce");
+//				case 5 -> System.out.println("Quince");
+//				case 6 -> System.out.println("Dieciséis");
+//				case 7 -> System.out.println("Diecisiete");
+//				case 8 -> System.out.println("Dieciocho");
+//				case 9 -> System.out.println("Diecinueve");
+//				}
+//				break;
+//			case 2:
+//				switch (unidades) {
+//				case 0:
+//					System.out.println("Veinte");
+//					break;
+//				default:
+//					System.out.println("Veinti");
+//
+//				}
+//
+//			}
+//
 //		}
+		
+		
+		
+		
+		
 
 	}
-
 }
