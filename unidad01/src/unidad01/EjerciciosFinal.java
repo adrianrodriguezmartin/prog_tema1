@@ -90,28 +90,28 @@ public class EjerciciosFinal {
 		 * 2.13
 		 */
 
-//		Scanner sc = new Scanner(System.in);
-//
-//		System.out.println("Introduce la cantidad de comida en kg: ");
-//		double comidaDiaria = sc.nextDouble();
-//		System.out.println("Introduce el número de animales: ");
-//		int numAnimales = sc.nextInt();
-//		if (numAnimales <= 0) {
-//			System.out.println("El número de animales no puede ser cero ni negativo.");
-//		} else {
-//			System.out.println("Introduce la media de kg que come cada animal: ");
-//			double kilosPorAnimal = sc.nextDouble();
-//
-//			double comidaNecesaria = numAnimales * kilosPorAnimal;
-//			if (comidaDiaria >= comidaNecesaria) {
-//				System.out.println("Tienes comida suficiente para todos los animales. ");
-//			} else {
-//				double racion = (comidaDiaria * 1.0) / numAnimales;
-//				System.out.printf("No tienes suficiente. La ración que corresponde a cada animal es de %.3f kg.",
-//						racion);
-//			}
-//
-//		}
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Introduce la cantidad de comida en kg: ");
+		double comidaDiaria = sc.nextDouble();
+		System.out.println("Introduce el número de animales: ");
+		int numAnimales = sc.nextInt();
+		if (numAnimales <= 0) {
+			System.out.println("El número de animales no puede ser cero ni negativo.");
+		} else {
+			System.out.println("Introduce la media de kg que come cada animal: ");
+			double kilosPorAnimal = sc.nextDouble();
+
+			double comidaNecesaria = numAnimales * kilosPorAnimal;
+			if (comidaDiaria >= comidaNecesaria) {
+				System.out.println("Tienes comida suficiente para todos los animales. ");
+			} else {
+				double racion = (comidaDiaria * 1.0) / numAnimales;
+				System.out.printf("No tienes suficiente. La ración que corresponde a cada animal es de %.3f kg.",
+						racion);
+			}
+
+		}
 
 		/*
 		 * 2.14
@@ -160,7 +160,7 @@ public class EjerciciosFinal {
 		
 		
 		
-		
+		sc.close();
 		
 
 	}

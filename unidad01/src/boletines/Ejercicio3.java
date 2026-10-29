@@ -21,6 +21,9 @@ public class Ejercicio3 {
 		int anyo = sc.nextInt();
 
 		boolean esBisiesto = (anyo % 4 == 0 && anyo % 100 != 0) || (anyo % 400 == 0);
+		
+		String mensaje = esBisiesto ? "" : "";
+		System.out.println(mensaje);
 
 		if (dia > 0 && dia <= 31) {
 
@@ -62,5 +65,7 @@ public class Ejercicio3 {
 		} else {
 			System.out.println("Fecha NO válida.");
 		}
+		
+		sc.close();
 	}
 }

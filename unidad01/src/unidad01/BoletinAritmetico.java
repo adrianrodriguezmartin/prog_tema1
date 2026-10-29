@@ -45,6 +45,8 @@ public class BoletinAritmetico {
 		int numero2 = sc.nextInt();
 		int distancia = Math.abs(numero1 - numero2);
 		System.out.println("La distancia entre los números es " + distancia);
+		
+		sc.close();
 	}
 
 }

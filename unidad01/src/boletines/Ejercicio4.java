@@ -47,5 +47,7 @@ public class Ejercicio4 {
 		}
 		double total = precio * kilos;
 		System.out.printf("El total obtenido es de %.2f€. \n", total);
+		
+		sc.close();
 	}
 }

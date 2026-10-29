@@ -64,6 +64,8 @@ public class BoletinRelacionales {
 		System.out.printf("La media es de %.2f. Tu resultado es ", media);
 		System.out.println(resultado ? "Aprobado." : "Suspenso.");
 		
+		sc.close();
+		
 	}
 
 }

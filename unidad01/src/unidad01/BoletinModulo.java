@@ -23,28 +23,29 @@ public class BoletinModulo {
 		 * Ejercicio 15: Realiza un programa que reciba una cantidad de segundos y
 		 * muestre por pantalla a cuantas horas, minutos y segundos corresponde.
 		 */
-//		Scanner sc = new Scanner(System.in);
-//		
-//		System.out.println("Introduce el número de segundos: ");
-//		int segundos = sc.nextInt();
-//		
-//		int minutos = (segundos/60) % 60;
-//		int horas = segundos / 3600;
-//		int segundosResto = segundos % 60;
-//		System.out.printf("Corresponde a %d horas, %d minutos y %d segundos.\n", horas, minutos, segundosResto);
+		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("Introduce el número de segundos: ");
+		int segundos = sc.nextInt();
+		
+		int minutos = (segundos/60) % 60;
+		int horas = segundos / 3600;
+		int segundosResto = segundos % 60;
+		System.out.printf("Corresponde a %d horas, %d minutos y %d segundos.\n", horas, minutos, segundosResto);
+		
+		sc.close();
 		/*
 		 * Dado un número de dos cifras, devolver el número invertido.
 		 */
-		System.out.println("Introduce un número de dos cifras: ");
-		Scanner scanner = new Scanner(System.in);
-		int numero = scanner.nextInt();
-		int unidades = numero % 10;
-		int decenas = numero / 10;
-		int numeroInvertido = unidades * 10 + decenas;
-		System.out.printf("El número invertido es %d. \n", numeroInvertido);
-		
-		
+//		System.out.println("Introduce un número de dos cifras: ");
+//		Scanner scanner = new Scanner(System.in);
+//		int numero = scanner.nextInt();
+//		int unidades = numero % 10;
+//		int decenas = numero / 10;
+//		int numeroInvertido = unidades * 10 + decenas;
+//		System.out.printf("El número invertido es %d. \n", numeroInvertido);
+//		
+//		scanner.close();
 		
 		/*
 		 * Ejercicio 18: Diseñar un algoritmo que nos diga el dinero que tenemos (en euros y céntimos)

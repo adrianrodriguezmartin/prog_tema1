@@ -43,6 +43,7 @@ public class OperacionesAritmeticas {
 		
 		//Ctrl + shift + o ==> importar todo automaticamente
 		
+		scanner.close();
 	}
 
 }

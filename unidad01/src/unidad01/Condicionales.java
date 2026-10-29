@@ -180,6 +180,8 @@ public class Condicionales {
 		default :
 			System.out.println("El operador introducido no es válido.");
 //			break; (opcional)
+			
+		sc.close();
 		}
 		
 		

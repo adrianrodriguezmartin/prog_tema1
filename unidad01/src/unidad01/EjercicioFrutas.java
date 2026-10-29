@@ -26,6 +26,7 @@ public class EjercicioFrutas {
 		double total = (manzanasPrimerSemestre + manzanasSegundoSemestre)*precioManzana + (perasPrimerSemestre + perasSegundoSemestre)*precioPera;
 		System.out.printf("El total de beneficio obtenido es de %.2f€. ", total);
 		
+		sc.close();
 	}
 
 }
